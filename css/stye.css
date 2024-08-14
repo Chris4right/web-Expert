@@ -1,0 +1,497 @@
+/*Global Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Roboto, sans-serif;
+}
+/**************************** Reusable Compoents **************/
+
+.row{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.row [class^="col-"]{
+    float: left;
+}
+
+.row [class^="col-"]:not(:last-child){
+    margin-right: 30px;
+}
+
+.row .col-1-of-2{
+    width: calc((100% - 30px) / 2);
+}
+.row .col-1-of-3{
+    width: calc((100% - 2 * 30px ) / 3);
+}
+.row .col-1-of-4{
+    width: calc((100% - 3 * 30px) / 4);
+}
+/**************************** Rows & col sention Ends **************/
+/**************************** Header **************/
+.header{
+    height: 90vh;
+    background-color: #000;
+}
+
+/**************************** Navigation **************/
+.nav{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.nav::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.nav-brand{
+    float: left;
+}
+
+/*Targetting by descendant */
+.nav-brand a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-menu{
+    float: right;
+    width: 35%;
+    margin-top: 10px;
+}
+
+
+.nav-list{
+   
+}
+
+.nav-list::after{
+    content: "";
+    clear: left;
+    display: table;
+}
+
+.nav-item{
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 7px;
+    border-bottom: 2px solid transparent;
+    transition: all .3s;
+}
+
+.nav-menu .nav-list .nav-item .nav-link:hover{
+    border-bottom-color: blue;
+   
+}
+
+/**************************** Hero **************/
+.hero{
+    padding-top: 60px;
+    padding: 60px 30px 0 30px;
+}
+
+.hero-head-text{
+    color: white;
+    font-size: 50px;
+}
+
+.hero-text-para{
+    color: white;
+    margin:30px 0;
+}
+.hero-image img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+/**************************** Buttons **************/
+.btn{
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: none;
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+    background-color:rgb(9, 9, 95);
+    border-color: rgb(47, 47, 115);
+    color: black;
+}
+/**************************** Header Ends **************/
+
+/****************************Business Offer  **************/
+.business-offfer{
+    padding: 100px 0;
+}
+
+.primary-heading{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom:  50px;
+    font-size: 40px;
+}
+
+.business-heading{
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 500;
+} 
+
+.business-para{
+    padding-bottom: 25px;
+}
+
+.steps{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.icon-box{
+
+}
+
+.icon-box img{
+    height: 75px;
+}
+
+.icon-box-bottom img{
+    height: 25px;
+}
+
+.shadow{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.quality-lead{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/apple-iphone-smartphone-desk.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 100px 0;
+
+}
+
+.quality-textbox{
+
+}
+
+.quality-heading{
+    font-size: 40px;
+}
+
+.quality-para{
+    margin: 40px 0;
+}
+.quality-image-box img{
+    width: 100%;
+    
+}
+
+.customer-online-mode{
+    padding: 100px 0;
+}
+.online-mode-heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.online-box::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.online-image-container img{
+    width: 100%;
+}
+.online-box{
+    padding:20px 30px ;
+}
+.online-image-container{
+    float: left;
+    width: 40%;
+}
+
+.online-textbox{
+    float: right;
+    width: 60%;
+    padding-left: 40px;
+}
+.online-textbox-heading{
+    margin-bottom: 10px;
+}
+
+.doctor-section{
+    background-color:black ;
+    padding: 100px 70px;
+}
+
+.doctor-section-heading{
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+.doc-circle{
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+.doc-image-container{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 2px solid black;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.doc-image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.doc-circle-heading{
+    text-align: center;
+    margin: 20px 0;
+}
+.doc-circle-para{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.star-rating{
+    text-align: center;
+    color: rgb(227, 207, 30);
+}
+
+.expert-team{
+    padding: 100px 0;
+}
+.expert-textbox{
+    padding: 10px 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+.expert-team-heading{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+.expert-image-container{
+    margin-bottom: 50px;
+}
+    
+.expert-image-container img{
+
+    height: 70px;
+    
+}
+.expert-heading{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.expert-para{
+    margin-bottom: 40px;
+}
+
+
+/****************************Section Contact Us  **************/
+.section-contact-us{
+    padding: 100px 0;
+    background-color: #000;
+    color: #fff;
+}
+.section-contact-us h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+.top-form-fields-container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.top-form-fields{
+    float: left;
+    width: 49%;
+    margin-bottom: 10px;
+}
+
+.top-form-fields:not(:last-child){
+    margin-right: 10px;
+}
+
+.form-control-label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+#textarea{
+    height: 80px;
+}
+.form-input{
+    width: 100%;
+    padding: 7px 12px;
+    border-radius: 7px;
+    border: none;
+}
+
+.form-input:focus{
+    border-color:solid blue;
+    color: black;
+}
+
+.Contact-icon-section{
+
+    padding: 0 50px;
+
+}
+.black{
+    background-color: black;
+    padding: 59px 30px;
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+    color: white;
+    text-align: center;
+}
+.contact-icon-image-container img{
+    width: 50px;
+}
+.footer{
+    background-color: black;
+    padding: 40px 30px;
+}
+.footer-para{
+    color: white;
+    font-size: 12px;
+}
+
+
+/*media quary for device width less than 900px(ipad devices)***/
+@media screen and (max-width: 900px){
+    .row{
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .row [class^="col-"]:not(:last-child){
+        margin-right: 0;
+    }
+    .row [class^="col-"]{
+        width: 100%;
+    }
+    .header{
+        height: 90vh;
+        background-color: #000;
+    }
+    .nav{
+        max-width: 100%
+    }
+    .hero{
+        padding-top: 0;
+        padding: 50px 0;
+    }
+    .hero-image img{
+        margin-top: 20px;
+    }
+    .business-offfer{
+        padding: 50px 0;
+    }
+    
+    .primary-heading{
+        font-size: 30px;
+        padding-bottom:  20px;
+    }
+    
+    .business-heading{
+        padding: 13px 0;
+    } 
+    
+    .business-para{
+        padding-bottom: 20px;
+    }
+    .customer-online-mode{
+        padding: 50px 0;
+    }
+    .online-mode-heading{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .online-image-container{
+        float: none;
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    .online-textbox{
+        float: none;
+        width: 60%;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .online-textbox-heading{
+        margin:10 0px;
+        text-align: center;
+    }
+    .doctor-section{
+        padding: 50px 35px;
+    }
+    .doc-circle{
+        margin-bottom: 15px;
+    }
+    .expert-team{
+        padding: 50px 0;
+    }
+    .section-contact-us{
+        padding: 50px 0;
+    }
+    .section-contact-us h3{
+        margin-bottom: 15px;
+    }
+    .form-container{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .top-form-fields{
+        float: none;
+        width: 0;
+        margin-bottom: 7px;
+    }
+    #textarea{
+        height: 50px;
+    }
+    .form-input{
+        width: 100%;
+        padding: 5px 10px;
+        border-radius: 7px;
+        border: none;
+    }
+}
+
+
+/*media quary for device width less than 480px(mobile devices)***/
+@media screen and (max-width: 480px){
+    
+}
