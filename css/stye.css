@@ -394,7 +394,7 @@ html{
 @media screen and (max-width: 900px){
     .row{
         max-width: 100%;
-        padding: 0 20px;
+        padding: 0 30px;
     }
     .row [class^="col-"]:not(:last-child){
         margin-right: 0;
@@ -403,7 +403,7 @@ html{
         width: 100%;
     }
     .header{
-        height: 90vh;
+        min-height: 90vh;
         background-color: #000;
     }
     .nav{
@@ -418,6 +418,9 @@ html{
     }
     .business-offfer{
         padding: 50px 0;
+    }
+    .steps{
+        margin-bottom: 20px;
     }
     
     .primary-heading{
@@ -441,8 +444,11 @@ html{
     }
     .online-image-container{
         float: none;
-        width: 40%;
+        width: 100%;
         margin: 0 auto;
+    }
+    .online-image-container img{
+        width: 100%;
     }
     
     .online-textbox{
