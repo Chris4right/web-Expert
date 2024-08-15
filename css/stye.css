@@ -399,8 +399,8 @@ html{
 /*media quary for device width less than 900px(ipad devices)***/
 @media screen and (max-width: 900px){
     .row{
-        max-width: 450px;
-        padding: 0 40px;
+        max-width: 650px;
+        padding: 0 30px;
     }
     .row [class^="col-"]:not(:last-child){
         margin-right: 0;
@@ -412,11 +412,11 @@ html{
         padding: 7px 12px;
     }
     .header{
-        min-height: 100vh;
+        height: 90vh;
         background-color: #000;
     }
     .nav{
-        max-width: 450px;
+        max-width: 650px;
     }
     .nav-brand {
         padding-left: 20px;
@@ -564,6 +564,9 @@ html{
     .nav-brand {
         padding-left: 20px;
         margin-top: 10px;
+    }
+    .nav-menu{
+        display: none;
     }
     .hero{
         padding-top: 0;
